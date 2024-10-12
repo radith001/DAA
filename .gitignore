@@ -1,0 +1,7 @@
+mariadb/
+mongo/
+postgress/
+redis/
+mysql/
+performance_schema/
+data/
