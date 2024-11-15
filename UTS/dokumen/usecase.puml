@@ -1,0 +1,21 @@
+@startuml
+actor Admin
+actor Guest as "Pengguna (Guest)"
+
+usecase "Login Admin" as UC1
+usecase "Tambah Data Motor" as UC2
+usecase "Edit Data Motor" as UC3
+usecase "Hapus Data Motor" as UC4
+usecase "Lihat Daftar Motor" as UC5
+usecase "Lihat Detail Motor" as UC6
+
+Admin --> UC1
+Admin --> UC2
+Admin --> UC3
+Admin --> UC4
+Admin --> UC5
+Admin --> UC6
+
+Guest --> UC5
+Guest --> UC6
+@enduml

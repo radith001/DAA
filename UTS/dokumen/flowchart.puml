@@ -1,0 +1,29 @@
+@startuml
+start
+
+:Admin Login;
+if (Login Valid?) then (Yes)
+    :Masuk ke Dashboard Admin;
+    if (Pilih Aksi?) then (Manajemen Motor)
+        :Tambah Data Motor;
+        :Edit Data Motor;
+        :Hapus Data Motor;
+    else (Akses Data Motor)
+        :Lihat Daftar Motor;
+        :Lihat Detail Motor;
+    endif
+else (No)
+    :Tampilkan Pesan Error;
+    stop
+endif
+
+:Pengguna (Guest) Akses Data;
+if (Akses Valid?) then (Yes)
+    :Lihat Daftar Motor;
+    :Lihat Detail Motor;
+else (No)
+    :Tampilkan Pesan Error;
+endif
+
+stop
+@enduml
