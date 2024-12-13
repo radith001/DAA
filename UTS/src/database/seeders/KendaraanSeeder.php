@@ -36,7 +36,7 @@ class KendaraanSeeder extends Seeder
             'color' => 'Merah',
             'price' => 30000000,
         ]);
-
+ 
         Kendaraan::create([
             'brand' => 'Kawasaki',
             'model' => 'Ninja ZX-25R',
