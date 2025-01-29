@@ -5,8 +5,8 @@ ENV TZ="Asia/Jakarta"
 
 ENV COMPOSER_MEMORY_LIMIT='-1'
 
-RUN apt-get update && \
-    apt-get install -y --force-yes --no-install-recommends \
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y \
         libmemcached-dev \
         libmcrypt-dev \
         libreadline-dev \
@@ -25,7 +25,8 @@ RUN apt-get update && \
         nano \
         libxml2-dev \
         nodejs \
-        npm 
+        npm && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install soap extention
 RUN docker-php-ext-install soap
