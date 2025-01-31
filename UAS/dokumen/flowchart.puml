@@ -1,0 +1,21 @@
+@startuml
+start
+
+:Admin Login;
+if (Login Valid?) then (Yes)
+    :Masuk ke Dashboard;
+    :Pilih Aksi;
+    if (Aksi == "Tambah Data Ikan") then
+        :Tambah Data Ikan;
+    else if (Aksi == "Edit Data Ikan") then
+        :Edit Data Ikan;
+    else if (Aksi == "Hapus Data Ikan") then
+        :Hapus Data Ikan;
+    endif
+else (No)
+    :Tampilkan Pesan Error;
+    stop
+endif
+
+stop
+@enduml

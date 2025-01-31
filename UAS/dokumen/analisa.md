@@ -112,14 +112,31 @@ Produktivitas di Metro Aquatic diukur berdasarkan efektivitas operasional dalam 
 ## **6. Klasifikasi Ikan Berdasarkan Kualitas dan Harga**  
 ### **Kategori Premium**  
 - **Kriteria**: Ukuran >30 cm, warna sempurna, sertifikat legal.  
-- **Contoh**: Arowana Platinum (Rp 25-50 juta).  
+- **Contoh**: Arwana Super Red (Rp 3-5 juta).  
 
 ### **Kategori Standar**  
-- **Kriteria**: Ukuran 15-30 cm, sehat, tanpa cacat.  
-- **Contoh**: Piranha Red Belly (Rp 1-5 juta).  
+- **Kriteria**: Ukuran 10-15 cm, sehat, tanpa cacat.  
+- **Contoh**: Piranha Black Diamond (Rp 1-3 juta).  
 
-### **Kategori Juvenile**  
-- **Kriteria**: Bibit ikan (3-10 cm), memerlukan perawatan intensif.  
-- **Contoh**: Alligator Gar juvenile (Rp 500 ribu-1 juta).  
+
+---
+
+## **7. Teknologi yang Digunakan dalam Aplikasi**
+
+### Framework Laravel
+Laravel dipilih sebagai framework untuk membangun aplikasi Metro Aquatic karena kemudahan dalam mengelola routing, autentikasi, dan pengolahan data yang kompleks. Dengan Laravel, pengelolaan CRUD (Create, Read, Update, Delete) untuk data ikan menjadi lebih efisien. Laravel juga mendukung pengembangan aplikasi berbasis RESTful API, memungkinkan pengembangan lebih lanjut untuk platform edukasi digital yang direncanakan.
+
+### Docker
+Docker digunakan untuk membuat lingkungan pengembangan yang konsisten dan dapat diatur dengan mudah, terlepas dari sistem operasi yang digunakan. Dengan menggunakan Docker, aplikasi Metro Aquatic akan berjalan dalam container yang terisolasi, meminimalkan potensi masalah lingkungan yang sering terjadi saat pengembangan.
+
+## MySQL Database
+MySQL digunakan sebagai sistem manajemen basis data (DBMS) yang kuat dan handal untuk menyimpan informasi tentang ikan hias predator. Dengan MySQL, data dapat dikelola secara efisien dan di-query dengan cepat untuk kebutuhan analisis dan laporan.
+
+### Struktur Database yang Direncanakan:
+- **Tabel Ikan**: Menyimpan informasi detail tentang spesies ikan, harga, dan ukuran ikan.
+
+
+
+
 
 
